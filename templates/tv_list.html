@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title> A Sample of the Best TV Shows of All Time </title>
+</head>
+
+<body>
+<div id="container">
+
+<h1> A Sample of the Best TV Shows of All Time </h1>
+<ul>
+{% for show in shows %}
+    <li><a href="/tv_detail/{{ show }}"> {{ show }}</a>
+</li>
+{% endfor %}
+</ul>
+
+</div> <!-- close container -->
+
+</body>
+</html>
